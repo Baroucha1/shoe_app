@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   // this selected index is to control the bottom nav
   int _selectedIndex = 0;
 
-  // this methode will update ourselected index
+  // this methode will update our selected index
   void navigateBottomBar(int index){
     setState(() {
       _selectedIndex = index;
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
 
               children: [
               Container(
-                padding: EdgeInsets.only(top:20, left: 20 ,right: 20),
+                padding: const EdgeInsets.only(top:20, left: 20 ,right: 20),
                 child: Column(
                   children: [
 
@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
 
             //logout
             const Padding(
-              padding: EdgeInsets.only(left: 25.0),
+              padding: EdgeInsets.only(left: 25.0, bottom: 25 ),
               child: ListTile(
                 leading: Icon(Icons.logout,color: Colors.white,),
                 title: Text('Logout',style: TextStyle(color: Colors.white),),
